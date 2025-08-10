@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>mohamed</title>
+    <link rel="stylesheet" href="ins.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="ins.js"></script>
+</head>
+<style>
+    * {
+
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    body {
+        background-color: #001;
+        display: flex;
+    }
+
+    .img-box {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid white;
+        flex-shrink: 0;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .profile h2 {
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+
+    .img-box img {
+        width: 100%;
+    }
+
+    .menu {
+        background-color: #123;
+        width: 60px;
+        height: 100vh;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .menu:hover {
+        width: 260px;
+    }
+
+    ul {
+        list-style: none;
+        position: relative;
+        height: 95%;
+    }
+
+    UL li a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        margin: 20px 0;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        transition: 0.5s;
+    }
+
+    ul li a:hover,
+    .active,
+    .data-info .box {
+        background-color: #ffffff55;
+    }
+
+    .log-out {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .log-out a {
+
+        background-color: #a00;
+    }
+
+    ul li a i {
+        font-size: 30px;
+
+    }
+
+    .content {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .title-info {
+        background-color: #0481ff;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .data-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .data-info .box {
+        background-color: #123;
+        height: 150px;
+        flex-basis: 150px;
+        flex-grow: 1;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .data-info .box i {
+        font-size: 40px;
+    }
+
+    .data-info .box .data {
+        text-align: center;
+    }
+
+    .data-info .box .data span {
+        font-size: 30px;
+    }
+
+    table {
+        width: 100%;
+        text-align: center;
+        border-spacing: 8px;
+    }
+
+    td,
+    th {
+        background-color: #123;
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    th {
+        background-color: #0080ff;
+    }
+
+    .price,
+    .count {
+        padding: 6px;
+        border-radius: 6px;
+    }
+
+    .price {
+        background-color: green;
+    }
+
+    .count {
+        background-color: gold;
+    }
+</style>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li class="profile">
+                <div class="img-box">
+                    <img src="C:\Users\Lenovo\Downloads\user-200x300.webp">
+                </div>
+                <h2>abdalla</h2>
+            </li>
+            <li>
+                <a class="active" href="#"><i class="fas fa-home"></i>
+                    <p>dashboard</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-user-group"></i>
+                    <p>clients</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-chart-pie"></i>
+                    <p>charts</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-pen"></i>
+                    <p>posts</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-star"></i>
+                    <p>favorite</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-cog"></i>
+                    <p>settings</p>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="#"><i class="fas fa-sign-out"></i>
+                    <p>Log Out</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="content">
+        <div class="title-info">
+            <p>dashboard</p>
+            <i class="fas fa-chart-bar"></i>
+        </div>
+
+
+
+        <div class="data-info">
+            <div class="box">
+                <i class="fas fa-user"></i>
+                <div class="data">
+                    <p>data</p>
+                    <span>100</span>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <i class="fas fa-pen"></i>
+                <div class="data">
+                    <p>posts</p>
+                    <span>700</span>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <i class="fas fa-table"></i>
+                <div class="data">
+                    <p>products</p>
+                    <span>30</span>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <i class="fas fa-dollar"></i>
+                <div class="data">
+                    <p>revenu</p>
+                    <span>126$</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="title-info">
+            <p>products</p>
+            <i class="fas fa-table"></i>
+
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>products</th>
+                    <th>price</th>
+                    <th>count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>tv</td>
+                    <td><span class="price">142$</span></td>
+                    <td><span class="count">30</span></td>
+                </tr>
+                <tr>
+                    <td>airpods</td>
+                    <td><span class="price">54$</span></td>
+                    <td><span class="count">30</span></td>
+                </tr>
+                <tr>
+                    <td>shoes</td>
+                    <td><span class="price">99$</span></td>
+                    <td><span class="count">30</span></td>
+                </tr>
+                <tr>
+                    <td>camera</td>
+                    <td><span class="price">72$</span></td>
+                    <td><span class="count">30</span></td>
+                </tr>
+                <tr>
+                    <td>pen</td>
+                    <td><span class="price">65$</span></td>
+                    <td><span class="count">30</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
